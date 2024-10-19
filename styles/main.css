@@ -1,0 +1,143 @@
+:root {
+  --main-bg-color: #0f3d54;
+  --content-bg-color: #ffffff;
+}
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: var(--content-bg-color);
+  margin: 2rem auto;
+  padding: 2em;
+  width: 40rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .content-wrapper {
+    margin: 0 auto;
+    border-radius: 0;
+    padding: 1em;
+  }
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  text-wrap: pretty;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 625px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+strong {
+  color: var(--main-bg-color)
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0.75em 0 0.25em 0;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+ol, ul {
+  margin: 0.5em 0;
+}
+
+li {
+  margin: 1em 0;
+}
+
+
+.schumer-hero {
+  width: 75%;
+  border-radius: 5px;
+}
+
+a, a:visited {
+  color: black;
+  text-decoration: none;
+  padding-bottom: 0.05em;
+  border-bottom: solid 2px black;
+  font-weight: 700;
+}
+
+a:hover, a:visited:hover {
+  color: #207de9;
+  border-bottom-color: #207de9;
+}
+
+.comic-sans {
+  font-family: 'Comic Sans MS', 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+particle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+button {
+  padding: 20px;
+  align-self: center;
+}
+.preloader {
+  position: absolute;
+  background: url(https://i.ibb.co/XDMv6SL/chuck-schumer.png);
+}
+
+.pray {
+  margin-top: 24px;
+
+  button {
+    font-weight: 700;
+    background-color: var(--main-bg-color);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: /*rgb(206, 206, 206)*/ var(--content-bg-color);
+  }
+}
