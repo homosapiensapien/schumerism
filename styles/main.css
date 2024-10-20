@@ -39,6 +39,13 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Papyrus';
+  src: 
+    url('../assets/fonts/papyrus/papyrus-webfont.woff2') format('woff2'),
+    url('../assets/fonts/papyrus/papyrus-webfont.woff') format('woff');
+}
+
 body {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   display: flex;
@@ -124,6 +131,7 @@ footer {
   margin-bottom: 0;
   font-size: 0.75rem;
   text-align: center;
+  line-height: 2;
 }
 
 
@@ -255,4 +263,8 @@ button:focus {
 
 .regular {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.papyrus {
+  font-family: 'Papyrus';
 }
