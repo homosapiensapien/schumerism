@@ -145,10 +145,6 @@ a:hover, a:visited:hover {
   border-bottom-color: #207de9;
 }
 
-.comic-sans {
-  font-family: 'Comic Sans MS', 'Inter', Arial, Helvetica, sans-serif;
-}
-
 .top {
   display: flex;
   justify-content: center;
@@ -215,4 +211,8 @@ button:focus {
 
 .bottom h2 {
   margin-top: 0;
+}
+
+.comic-sans {
+  font-family: 'Comic Sans MS';
 }
