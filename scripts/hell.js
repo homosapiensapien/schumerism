@@ -28,11 +28,10 @@ function createParticle(x, y) {
 	document.body.appendChild(particle);
 
 	// Calculate a random size from 5px to 25px
-	particle.style.width = `152px`;
-	particle.style.height = `172px`;
+	particle.style.width = '194px';
+	particle.style.height = '267px';
 	particle.style.backgroundImage =
-		'url(https://i.ibb.co/XDMv6SL/chuck-schumer.png)';
-  particle.style.borderRadius = '10px';
+		'url(https://c.tenor.com/wLTK-fVE75UAAAAC/tenor.gif)';
 
 	// Generate a random x & y destination within a distance of 1000px from the mouse
 	const destinationX = x + (Math.random() - 0.5) * 2 * 1000;
@@ -67,16 +66,16 @@ function createParticle(x, y) {
 	};
 }
 
-
 let clickCount = 0;
 const button = document.getElementById('button');
+const img = document.getElementById('hero');
 
 button.addEventListener('click', () => {
 		clickCount++;
 
 		if (clickCount === 10) {
 			setTimeout(() => {
-				window.location.href = '../hell.html';
+				img.src = '../assets/images/Dancing baby_.gif';
 			}, 2500)
 		}
 });
