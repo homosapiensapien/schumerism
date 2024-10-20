@@ -32,7 +32,7 @@ function createParticle(x, y) {
 	particle.style.height = `172px`;
 	particle.style.backgroundImage =
 		'url(https://i.ibb.co/XDMv6SL/chuck-schumer.png)';
-  particle.style.borderRadius = '5px'
+  particle.style.borderRadius = '10px';
 
 	// Generate a random x & y destination within a distance of 1000px from the mouse
 	const destinationX = x + (Math.random() - 0.5) * 2 * 1000;

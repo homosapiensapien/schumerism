@@ -22,7 +22,7 @@ body {
   margin: 2rem auto;
   padding: 2em;
   width: 40rem;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 650px) {
@@ -93,7 +93,7 @@ footer {
 
 .schumer-hero {
   width: 75%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .image-container {
@@ -197,7 +197,7 @@ button:focus {
 .preloader {
   position: absolute;
   background: url(https://i.ibb.co/XDMv6SL/chuck-schumer.png);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .pray {
