@@ -216,3 +216,7 @@ button:focus {
 .comic-sans {
   font-family: 'Comic Sans MS';
 }
+
+.regular {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
