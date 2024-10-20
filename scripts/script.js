@@ -74,7 +74,7 @@ const button = document.getElementById('button');
 button.addEventListener('click', () => {
 		clickCount++;
 
-		if (clickCount === 10) {
+		if (clickCount === 5) {
 			setTimeout(() => {
 				window.location.href = '../hell.html';
 			}, 2500)
