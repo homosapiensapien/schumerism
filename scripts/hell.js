@@ -30,8 +30,14 @@ function createParticle(x, y) {
 	// Calculate a random size from 5px to 25px
 	particle.style.width = '194px';
 	particle.style.height = '267px';
-	particle.style.backgroundImage =
-		'url(https://c.tenor.com/wLTK-fVE75UAAAAC/tenor.gif)';
+
+	const images = [
+		'https://c.tenor.com/wLTK-fVE75UAAAAC/tenor.gif',
+		'../assets/images/chuck-schumer-cursed.png'
+	];
+
+	const randomImage = images[Math.floor(Math.random() * images.length)];
+	particle.style.backgroundImage = `url(${randomImage})`;
 
 	// Generate a random x & y destination within a distance of 1000px from the mouse
 	const destinationX = x + (Math.random() - 0.5) * 2 * 1000;
@@ -88,8 +94,8 @@ button.addEventListener('click', () => {
 			}, 2500);
 
 			setTimeout(() => {
-        img.src = '../assets/images/chuck schumer.png';
-      }, 10000);
+        img.src = '../assets/images/chuck-schumer-cursed.png';
+      }, 15000);
 			clickCount = 0;
 		}
 });

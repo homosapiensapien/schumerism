@@ -71,3 +71,25 @@ dialog {
 	}
 
 }
+
+.schumer-hero {
+	/* transform: rotate(180deg) scaleX(-1); */
+}
+
+.download-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+	.download-buttons {
+		gap: 2em;
+		margin: 2em 0;
+	}
+
+	.download-buttons button {
+		margin: 0;
+	}
+}
