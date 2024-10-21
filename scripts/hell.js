@@ -1,3 +1,7 @@
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 // Code copied from CSS Tricks, modified
 if (document.body.animate) {
 	document.querySelector('#button').addEventListener('click', pop);
