@@ -69,14 +69,23 @@ function createParticle(x, y) {
 
 
 let clickCount = 0;
+let timer;
 const button = document.getElementById('button');
 
 button.addEventListener('click', () => {
 		clickCount++;
 
-		if (clickCount === 5) {
+		if (clickCount === 1) {
+			timer = setTimeout (() => {
+				clickCount = 0;
+			}, 15000)
+		}
+
+		if (clickCount === 25) {
+			clearTimeout(timer);
 			setTimeout(() => {
 				window.location.href = '../hell.html';
 			}, 2500)
+			clickCount = 0;
 		}
 });

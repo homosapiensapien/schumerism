@@ -66,6 +66,8 @@ function createParticle(x, y) {
 	};
 }
 
+//dancing baby switch
+
 let clickCount = 0;
 const button = document.getElementById('button');
 const img = document.getElementById('hero');
@@ -73,9 +75,23 @@ const img = document.getElementById('hero');
 button.addEventListener('click', () => {
 		clickCount++;
 
+		if (clickCount === 1) {
+			timer = setTimeout (() => {
+				clickCount = 0;
+			}, 15000);
+		}
+
 		if (clickCount === 10) {
+			clearTimeout(timer);
 			setTimeout(() => {
 				img.src = '../assets/images/Dancing baby_.gif';
-			}, 2500)
+			}, 2500);
+
+			setTimeout(() => {
+        img.src = '../assets/images/chuck schumer.png';
+      }, 10000);
+			clickCount = 0;
 		}
 });
+
+
