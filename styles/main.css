@@ -96,7 +96,7 @@ h1 {
 }
 
 strong {
-  color: var(--main-bg-color)
+  color: var(--main-bg-color);
 }
 
 h2 {

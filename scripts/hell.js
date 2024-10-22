@@ -81,6 +81,21 @@ function createParticle(x, y) {
 let clickCount = 0;
 const button = document.getElementById('button');
 const img = document.getElementById('hero');
+const body = document.querySelector('*');
+const ooga = document.getElementById('ooga');
+
+function setUniversalAnimation(duration) {
+  const style = document.createElement('style');
+  style.innerHTML = `* { animation: rainbow ${duration} linear infinite !important; }`;
+  document.head.appendChild(style);
+}
+
+function setInvert(invert) {
+	const style = document.createElement('style');
+	style.innerHTML = `* {filter: invert(${invert}) !important;}`;
+	document.head.appendChild(style);
+}
+
 
 button.addEventListener('click', () => {
 		clickCount++;
@@ -95,11 +110,18 @@ button.addEventListener('click', () => {
 			clearTimeout(timer);
 			setTimeout(() => {
 				img.src = '../assets/images/Dancing baby_.gif';
+				ooga.play()
+				setUniversalAnimation('500ms');
+				setInvert('1');
 			}, 2500);
 
 			setTimeout(() => {
+				ooga.pause()
+				ooga.currentTime = 0;
         img.src = '../assets/images/chuck-schumer-cursed.png';
-      }, 15000);
+				setUniversalAnimation('7.5s');
+				setInvert('0');
+      }, 25000);
 			clickCount = 0;
 		}
 });

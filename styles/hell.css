@@ -4,6 +4,57 @@
   animation-iteration-count: infinite;
 }
 
+.rainbow-fast {
+  animation: rainbow 1s linear infinite !important; 
+}
+
+body {
+	overflow-x: hidden;
+}
+
+body:has(dialog[open]) {
+	overflow: hidden;
+}
+
+@keyframes rainbow {
+	100%,0%{
+		color: rgb(255,0,0) !important;
+	}
+	8%{
+		color: rgb(255,127,0) !important;
+	}
+	16%{
+		color: rgb(255,255,0) !important;
+	}
+	25%{
+		color: rgb(127,255,0) !important;
+	}
+	33%{
+		color: rgb(0,255,0) !important;
+	}
+	41%{
+		color: rgb(0,255,127) !important;
+	}
+	50%{
+		color: rgb(0,255,255) !important;
+	}
+	58%{
+		color: rgb(0,127,255) !important;
+	}
+	66%{
+		color: rgb(0,0,255) !important;
+	}
+	75%{
+		color: rgb(127,0,255) !important;
+	}
+	83%{
+		color: rgb(255,0,255) !important;
+	}
+	91%{
+		color: rgb(255,0,127) !important;
+	}
+}
+
 body:has(dialog[open]) {
 	overflow: hidden;
 }
