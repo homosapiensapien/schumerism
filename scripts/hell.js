@@ -121,7 +121,7 @@ button.addEventListener('click', () => {
         img.src = '../assets/images/chuck-schumer-cursed.png';
 				setUniversalAnimation('7.5s');
 				setInvert('0');
-      }, 25000);
+      }, 27000);
 			clickCount = 0;
 		}
 });
