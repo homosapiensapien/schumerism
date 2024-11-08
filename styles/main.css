@@ -226,12 +226,11 @@ button {
   width: 200px;
 }
 
-button:hover {
-  color: rgb(206, 206, 206);
-}
 
-button:focus {
-  background-color: #15587a;;
+button:focus,
+button:hover {
+  background-color: #15587a;
+  cursor: pointer;
 }
 
 .preloader {

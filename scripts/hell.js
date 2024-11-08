@@ -92,7 +92,7 @@ function setUniversalAnimation(duration) {
 
 function setInvert(invert) {
 	const style = document.createElement('style');
-	style.innerHTML = `* {filter: invert(${invert}) !important;}`;
+	style.innerHTML = `* {filter: invert(${invert});}`;
 	document.head.appendChild(style);
 }
 
@@ -106,7 +106,7 @@ button.addEventListener('click', () => {
 			}, 15000);
 		}
 
-		if (clickCount === 10) {
+		if (clickCount === 20) {
 			clearTimeout(timer);
 			setTimeout(() => {
 				img.src = '../assets/images/Dancing baby_.gif';
@@ -121,7 +121,7 @@ button.addEventListener('click', () => {
         img.src = '../assets/images/chuck-schumer-cursed.png';
 				setUniversalAnimation('7.5s');
 				setInvert('0');
-      }, 27000);
+      }, 26000);
 			clickCount = 0;
 		}
 });
