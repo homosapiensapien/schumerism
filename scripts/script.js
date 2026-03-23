@@ -89,3 +89,6 @@ button.addEventListener('click', () => {
 			clickCount = 0;
 		}
 });
+
+//copyright year
+document.getElementById("copyrightYear").innerHTML = new Date().getFullYear();
